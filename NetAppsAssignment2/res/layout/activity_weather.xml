@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WeatherActivity" >
+
+    <TextView
+        android:id="@+id/txtAsOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="As Of: No Data" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAsOf"
+        android:layout_below="@+id/txtAsOf"
+        android:layout_marginTop="35dp"
+        android:text="Location: No Data\nTemperature: No Data\nPressure: No Data\nHumidity: No Data" />
+
+    <ToggleButton
+        android:id="@+id/tbtnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtData"
+        android:layout_alignParentBottom="true"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/lblUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbtnUpdate"
+        android:layout_alignRight="@+id/txtData"
+        android:text="Auto update" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tbtnUpdate"
+        android:text="Update Now" />
+
+    <TextView
+        android:id="@+id/lblInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtData"
+        android:layout_below="@+id/txtAsOf"
+        android:layout_marginTop="16dp"
+        android:text="From Internet:" />
+
+    <TextView
+        android:id="@+id/lblSensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtData"
+        android:layout_below="@+id/txtData"
+        android:layout_marginTop="40dp"
+        android:text="From Sensors:" />
+
+    <TextView
+        android:id="@+id/txtSensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblSensors"
+        android:layout_below="@+id/lblSensors"
+        android:layout_marginTop="4dp"
+        android:text="Temperature: No Data\nPressure: No Data\nHumidity: No Data" />
+
+</RelativeLayout>
